@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- blog.post inherit form view -->
+    <record id="website_new_content_form" model="ir.ui.view">
+        <field name="name">blog.post.inherit.view.form</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.blog_post_view_form_add" />
+        <field name="arch" type="xml">
+            <field name="blog_id" position="after">
+                <field name="company_id" />
+            </field>
+        </field>
+    </record>
+
+
+</odoo>
