@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="contactus_form" name="Contact Form (Opportunity)" inherit_id="website.contactus">
+        
+            <xpath expr="//div[hasclass('s_website_form_submit')]" position="before">
+                <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="source_type">
+                            <span class="s_website_form_label_content">Source Type</span>
+                            <span class="s_website_form_mark"> *</span>
+                        </label>
+                        <div class="col-sm">
+                            <select id="source_type" class="form-control s_website_form_input" name="source_type" required="" data-fill-with="source_type">
+                                <option value="">Seleccione una opción</option>
+                                <option value="third_party">Terceros</option>
+                                <option value="social_networks">Redes Sociales</option>
+                                <option value="internet_search">Búsqueda en Internet</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
