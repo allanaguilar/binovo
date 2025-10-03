@@ -7,7 +7,7 @@
     ''',
     'author': 'Allan Aguiilar',
     'website': 'https://binovo.es/',
-    'version': '2025.09.04',
+    'version': '2025.09.05',
     'license': 'Other proprietary',
     'maintainer': '',
     'contributors': [],
